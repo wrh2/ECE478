@@ -4,7 +4,7 @@ import random
 # python class for einstein
 class Einstein:
 
-    def slide(num):
+    def slide(self, num):
         """
         This function takes in a slide number or interaction number
         it then determines what action einstein takes
