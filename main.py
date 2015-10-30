@@ -25,7 +25,7 @@ parser.add_argument('--personality', action = 'store_true', help = 'gets persona
 parser.add_argument('-a', action = 'store', dest = 'Action', required = False, help = 'optional argument for action to einstein to react to')
 
 # argument for getting robot to perform command
-parser.add_argument('-c', type = float, action = 'store', dest = 'Command', required = False, help = 'optional argument for getting robot to perform command')
+parser.add_argument('-c', type = int, action = 'store', dest = 'Command', required = False, help = 'optional argument for getting robot to perform command')
 
 # parse the arguments
 arguments = parser.parse_args()
@@ -37,7 +37,8 @@ arguments = parser.parse_args()
 Einstein = Einstein(random.randint(1,10), random.randint(1,10))
 
 if(arguments.Command):
-    print Einstein.slide(arguments.Command)
+    print arguments.Command
+    print Einstein.command(arguments.Command)
 
 # mood argument present
 if(arguments.mood):

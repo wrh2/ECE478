@@ -4,6 +4,44 @@ import random
 # python class for einstein
 class Einstein:
 
+    def command(self, num):
+        """
+        This function takes in an integer and translates it to a command to the Einstein robot
+        """
+
+        if(num == 1):
+            return 'Stop robot'
+        elif(num == 2):
+            return 'Robot forward'
+        elif(num == 3):
+            return 'Robot backward'
+        elif(num == 4):
+            return 'Robot raises right arm'
+        elif(num == 5):
+            return 'Robot raises left arm'
+        elif(num == 6):
+            return 'Robot moves forward fastly'
+        elif(num == 7):
+            return 'Robot moves backward fastly'
+        elif(num == 8):
+            return 'Robot turns 45 degrees left'
+        elif(num == 9):
+            return 'Robot turns 90 degrees left'
+        elif(num == 10):
+            return 'Robot turns 180 degrees left'
+        elif(num == 11):
+            return 'Robot turns 360 degrees left'
+        elif(num == 12):
+            return 'Robot turns 45 degrees right'
+        elif(num == 13):
+            return 'Robot turns 90 degrees right'
+        elif(num == 14):
+            return 'Robot turns 180 degrees right'
+        elif(num == 15):
+            return 'Robot turns 360 degrees right'
+        else:
+            return 'Invalid command'
+
     def slide(self, num):
         """
         This function takes in a slide number or interaction number
