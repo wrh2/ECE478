@@ -29,8 +29,69 @@ class Einstein:
 
         # slide 1.11
         if(num == 1.11):
-            return 'Einstein grabs violin, points to Mary, then looks at Newton and Bohr'
-    
+            return 'Einstein grabs violin, points to Mary,' \
+                'then looks at Newton and Bohr, and directs them to Dr. Curie salon'
+
+        # slide 1.15
+        if(num == 1.15):
+            return 'Einstein angrily jumps up and down'
+
+        # interaction 2.2 or slide 1.17
+        if(num == 2.2 or num == 1.17):
+            if(chance > self.niceness):
+                return 'Einstein drives always to the person who talks but keeps distance'
+            else:
+                return 'Einstein turns always to the person who talks, keeping his distance'
+
+        # slide 1.18
+        if(num == 1.18):
+            if(chance > self.niceness):
+                return 'Einstein flicks everybody off'
+            else:
+                return 'Einstein sticks his tongue out'
+
+        # slide 1.19
+        if(num == 1.19):
+            return 'Einstein patronizes Newton then points to Schrodingers cat'
+
+        # interaction 2.3 or slide 1.20
+        if(num == 2.3 or num == 1.20):
+            return 'Einstein communicates intensely with schrodingers cat'
+
+        # slide 1.21
+        if(num == 1.21):
+            return 'Einstein goes on long tangent regarding Dark Energy and spacetime'
+
+        # slide 1.23
+        if(num == 1.23):
+            return 'Einstein turns to schrodingers cat'
+
+        # interaction 2.5 or slide 1.27
+        if(num == 2.5 or num == 1.27):
+            return 'Einstein moves towards Bohr until he is close, then dance forward and backward'
+
+        # interaction 2.5 or slide 1.27
+        if(num == 2.6 or num == 1.29):
+            return 'Einstein moves towards Bohr until he is close, then dance forward and backward'
+
+        # slide 1.32
+        if(num == 1.32):
+            if(chance > self.niceness):
+                return 'Einstein speaks sarcastically, and acts surprised'
+            else:
+                return 'Einstein is genuinley surprised'
+
+        # interaction 2.7 or slide 1.33
+        if(num == 2.7 or num == 1.33):
+            return 'Einstein loses control and says loudly: SHUT UP!'
+
+        # interaction 2.8 or slide 1.35
+        if(num == 2.8 or num == 1.35):
+            return 'Einstein dances in circles in the middle'
+
+        # interaction 2.9 or slide 2.37
+        
+
     def mood(self):
         """
             Function returns string that represents mood
