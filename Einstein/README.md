@@ -1,4 +1,4 @@
-# ECE478
+# Einstein, the famous theatrical Robot from PSU!
 
 ## Table of contents
 
@@ -23,3 +23,7 @@ This should return a string that indicates Einstein's "mood"
 > python main.py -a "integer from 1-10"
 
 This is a action (integer from 1-10) that einstein "reacts" to. Returns a string
+
+> python main.py -c "integer from 1-15"
+
+This issues a command to the robot
