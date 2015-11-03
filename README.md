@@ -10,8 +10,8 @@ SimpleCV_stuff - computer vision code for robot
 
 ## Einstein team
 
-William Harrington
+[William Harrington](mailto:wrh2@pdx.edu)
 
-David Hernandez
+[David Hernandez](mailto:dhern2@pdx.edu)
 
-Waleed Alhaddad
+[Waleed Alhaddad](mailto:alhad@pdx.edu)
