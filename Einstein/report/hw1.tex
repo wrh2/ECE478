@@ -13,10 +13,11 @@
 ECE478} %if necessary, replace with your course title
  
 \maketitle
+\small
 \begin{description}
 	\item[Introduction] \hfill \\ \\
 		This report contains a detailed explanation of the homework 1 assignment for the Einstein group. \\ \\
-		\textbf{Learning Outcomes} \hfill \\
+		\textbf{Learning Outcomes} \\
 		The purpose of this homework was to fulfill the following learning outcomes.
 		\begin{enumerate}
 			\item Use of Kinect to control a robot, to create commands and data for a robot.
@@ -26,7 +27,7 @@ ECE478} %if necessary, replace with your course title
 			\item Dialogs with robots
 		\end{enumerate}
 		\newpage
-		\textbf{First phase explanation} \hfill \\
+		\textbf{First phase explanation}
 		\begin{figure}[H]
 			\caption{A high level diagram of the first phase objectives}
 			\fbox{\includegraphics[scale=.3]{hw1_phase1_diagram.png}}
@@ -38,7 +39,7 @@ ECE478} %if necessary, replace with your course title
 			\item Create a powerpoint presentation with info, effects, figures, pictures, and videos about Einstein and the "Quantum Debate" play
 			\item Record voice with German accent that is suppose to be Einstein for the powerpoint presentation
 		\end{enumerate}
-		In order to meet these objectives, our group used the following:
+		In order to meet these objectives, our group did the following:
 		\begin{itemize}
 			\item We created a powerpoint presentation using Microsoft Powerpoint.
 				\begin{itemize}
@@ -56,6 +57,7 @@ ECE478} %if necessary, replace with your course title
 							\item Macros were used to make buttons that could be clicked on with the mouse to transition to another slide
 						\end{itemize}
 				\end{itemize}
+			\newpage
 			\item We found software called KinectMouse for controlling a PC mouse and powerpoint presentation with Kinect
 				\begin{itemize}
 					\item The software can be located \href{https://kinectmouse.codeplex.com/}{here} \footnote{https://kinectmouse.codeplex.com/}
@@ -71,11 +73,47 @@ ECE478} %if necessary, replace with your course title
 			\item Voice effects: Waleed
 			\item Documentation: Will
 		\end{itemize} \hfill \\
+		\newpage
 		\textbf{Second phase explanation}
 		\begin{figure}[H]
+			\centering
 			\caption{A high level diagram of the second phase objectives}
-			\fbox{\includegraphics[scale=.3]{hw1_phase2_diagram.png}}
+			\fbox{\includegraphics[scale=.25]{hw1_phase2_diagram.png}}
 		\end{figure}
+		\textbf{The objective for the second phase of this homework was to:}
+		\begin{enumerate}
+			\item Create a state machine in software that describes the behavior of the robot, robots, and/or the entire theatre presentation
+				\begin{itemize}
+					\item Could be deterministic, probabilistic, or fuzzy, or a mix of these.
+					\item Can have several machines communicating with one another.
+					\item Can be programmed in any language.
+					\item Should use Microsoft Powerpoint and Kinect software
+				\end{itemize} 
+		\end{enumerate}
+		In order to meet these objectives, our group did the following:
+		\begin{itemize}
+			\item We chose to use python for programming the state machine
+			%\newpage
+			\item A python class object was created to describe the behavior of the Einstein robot
+				\begin{itemize}
+					\item It is appropriately titled "Einstein"
+					\item It can be found \href{https://github.com/wrh2/ECE478/blob/master/Einstein/Einstein.py}{here} \footnote{https://github.com/wrh2/ECE478/blob/master/Einstein/Einstein.py}
+					\item It contains multiple ways to potentially control the behavior of the robot
+					\item The behavior of the robot is determined by probabilistic logic using random number generators
+				\end{itemize}
+			\newpage
+			\item A python program was made to demonstrate the python class object
+				\begin{itemize}
+					\item It is called "main"
+					\item It can be found \href{https://github.com/wrh2/ECE478/blob/master/Einstein/main.py}{here} \footnote{https://github.com/wrh2/ECE478/blob/master/Einstein/main.py}
+					\item It takes arguments from the command line, parses them and then calls the appropriate method in the Einstein python class object
+						\begin{itemize}
+							\item Code requires the following python libraries to run: argparse, random, Einstein.py (see footnotes on page 4)
+							\item There is also a README located \href{https://github.com/wrh2/ECE478/blob/master/Einstein/README.md}{here} \footnote{https://github.com/wrh2/ECE478/blob/master/Einstein/README.md}
+						\end{itemize}
+				\end{itemize}
+		\end{itemize}
+		
 \end{description}
 
 \end{document}
