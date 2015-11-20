@@ -5,4 +5,4 @@ Most of it is experimental and will eventually be incorporated into the Einstein
 
 ## Dependencies
 
-All code makes use of [SimpleCV] (simplecv.org) 
+All code makes use of [SimpleCV] (http://simplecv.org) 
