@@ -127,7 +127,9 @@ class Einstein:
         if(num == 2.8 or num == 1.35):
             return 'Einstein dances in circles in the middle'
 
-        # interaction 2.9 or slide 2.37
+        # more slides from play need to be added
+
+        return 'Invalid slide number'
         
 
     def mood(self):
@@ -164,7 +166,7 @@ class Einstein:
         """
             Function takes Action (integer 1 to 10)
             and generates a reaction from Einstein
-            based on some probablistic bullshit I made up
+            based on some probablistic logic
         """
         
         # keep it within the proper range
