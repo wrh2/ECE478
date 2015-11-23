@@ -74,6 +74,7 @@ ECE478} %if necessary, replace with your course title
   			\node[draw,rectangle,below of=c] (d) {Arduino digitalRead};
 			\node[draw,rectangle,left of=a] (e) {Img};
 			\node[draw,rectangle,below of=d] (f) {Arduino analogWrite};
+			\node[draw,rectangle,below of=f] (g) {Pololu servo controller};
 			
   			% 1st pass: draw arrows
   			\draw[vecArrow] (a) to (b);
@@ -81,13 +82,15 @@ ECE478} %if necessary, replace with your course title
 			\draw[vecArrow] (c) to (d);
 			\draw[vecArrow] (e) to (a);
 			\draw[vecArrow] (d) to (f);
+			\draw[vecArrow] (f) to (g);
 
-  			% 2nd pass: copy all from 1st pass, and replace vecArrow with innerWhite
-  			\draw[innerWhite] (a) to (b);
- 		 	\draw[innerWhite] (b) to (c);
-			\draw[vecArrow] (c) to (d);
-			\draw[vecArrow] (e) to (a);
-			\draw[vecArrow] (d) to (f);
+%  			% 2nd pass: copy all from 1st pass, and replace vecArrow with innerWhite
+%  			\draw[innerWhite] (a) to (b);
+% 		 	\draw[innerWhite] (b) to (c);
+%			\draw[vecArrow] (c) to (d);
+%			\draw[vecArrow] (e) to (a);
+%			\draw[vecArrow] (d) to (f);
+%			\draw[vecArrow] (f) to (g);
 
   		% Note: If you have no branches, the 2nd pass is not needed
 		\end{tikzpicture}
@@ -98,6 +101,7 @@ ECE478} %if necessary, replace with your course title
 			\item RPI.GPIO = Python wrappers for controlling Raspberry Pi GPIO pins
 			\item Arduino digitalRead = Arduino function to read if pin is high or low
 			\item Arduino analogWrite = Arduino function for Pulse Width Modulation on capable pin
+			\item Pololu servo controller = Device responsible for driving servo motors that move robot
 		\end{itemize}
 		\newpage
 		\textbf{Raspberry Pi 2 Model B}
