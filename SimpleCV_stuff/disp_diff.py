@@ -1,5 +1,11 @@
 from SimpleCV import Camera, Display
 import time
+import RPi.GPIO as GPIO
+
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(12, GPIO.OUT)
+out = False
+GPIO.output(12, out)
 
 threshold = 5.0
 
@@ -19,6 +25,10 @@ while not disp.isDone():
 
     if mean >= threshold:
         print "Motion Detected"
+        out = True
+    else:
+        out = False
 
+    GPIO.output(12, out)
     time.sleep(.1)
     previous = current
