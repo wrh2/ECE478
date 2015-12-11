@@ -70,7 +70,7 @@ board.digital[PIN].write(value)
 value = 1
 PIN = 7
 board.digital[PIN].write(value)
-time.sleep(2)
+time.sleep(5)
 value = not value
 board.digital[PIN].write(value)
 
