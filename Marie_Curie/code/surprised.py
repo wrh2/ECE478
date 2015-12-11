@@ -34,8 +34,8 @@ import time
 # use the sys package for exiting
 import sys
 
-# use pin 9
-PIN = 9
+# use pin 8
+PIN = 8
 
 # this needs to be changed according to the port you have
 # the arduino device connected to
