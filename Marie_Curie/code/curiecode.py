@@ -48,6 +48,28 @@ for i in range(4):
     # delay 3 seconds
     time.sleep(3)
 
+time.sleep(7)
+PIN = 9
+last = 0
+
+# loop for making marie curie's face smil
+for i in range(4):
+
+    # grab current time
+    time2 = time.strftime('%H:%M:%S')
+
+    # show current time and current loop
+    print '%s: On loop %s' % (time2, i)
+
+    # write the pin on the board to the value last
+    board.digital[PIN].write(last)
+
+    # invert last
+    last = not last
+
+    # delay 3 seconds
+    time.sleep(3)
+
 # pull pin low, exit out
 board.digital[PIN].write(0)
 board.exit()
