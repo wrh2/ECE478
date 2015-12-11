@@ -107,18 +107,27 @@ ECE478} %if necessary, replace with your course title
 			\item Pololu Maestro Servo Controller Software \footnote{https://www.pololu.com/docs/0J40}
 		\end{itemize}
 		
-		\textbf{Finite State Machine}
-		\includegraphics{FSM.png}
-		
 		\textbf{Setup} \hfill \\
 		A windows laptop must be used in conjunction with a Microsoft Kinect and Arduino Uno. The Marie Curie robot should already have Micro Maestro 6-Channel USB Servo Controllers. If not, those need to be procured and included in your setup or this will not work. The servo controller needs to be hooked up properly. \\
-		The powerpoint presentation located \href{http://linktopowerpoint}{here} should be opened and started prior to starting the Kinect Mouse software. Furthermore, the resources available at the git repository for this project located \href{https://github.com/wrh2/ECE478}{here} need to be installed. The macros in the powerpoint must be modified to match the installation directory of the software from our repo otherwise the macros in the powerpoint will not work properly. \\
+		The powerpoint presentation located \href{http://linktopowerpoint}{here} should be opened and started prior to starting the Kinect Mouse software. Furthermore, the resources available at the git repository for this project located \href{https://github.com/wrh2/ECE478/tree/master/Marie_Curie}{here} need to be installed. The macros in the powerpoint must be modified to match the installation directory of the software from our repo otherwise the macros in the powerpoint will not work properly. \\
 		Once all of that is setup, start the Kinect Mouse software to control the powerpoint and press the buttons in it as desired to make the robot perform.\\ \\
-		\textbf{Details and explanation} \hfill \\
-		The kinect is controlled by using the KinectMouse software located \href{http://futuretechblog.com/?p=26}{here}. A powerpoint presentation was made by the group containing information about Marie Curie and macro buttons which call python scripts that use the format protocol to communicate with the arduino that is connected to the host computer.
+		\textbf{Details and explanation} \hfill \\ \\
+		The kinect is controlled by using the KinectMouse software. A powerpoint presentation was made by the group containing information about Marie Curie and macro buttons, which call python scripts that use the firmata protocol to communicate with the arduino that is connected to the host computer. The arduino code is a combination of a Pololu driver and a firmata driver for the Arduino Uno. Our portion of the code simply reads pins on the arduino that are encoded to trigger the appropriate action when the designated pin is high. Each script always returns Marie to her normal face at the end.
+		
+		The arduino pin encodings are as follows:
+		\begin{itemize}
+			\item Pin 7 controls Normal behavior
+			\item Pin 8 controls Surprised behavior
+			\item Pin 9 controls Happy behavior
+			\item Pin 10 controls Confused behavior
+		\end{itemize}
+
+		\textbf{Finite State Machine} \\
+		\includegraphics[scale=.45]{FSM.PNG} \\
 		
 	\item[Results] \hfill \\
-		Results go here.
+		
+		\href{https://youtu.be/GLy8DHwoF8I}{Demo Video} \footnote{https://youtu.be/GLy8DHwoF8I}
 		
 %		\begin{itemize}
 %			\item Img = Image
