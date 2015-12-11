@@ -48,6 +48,7 @@ for i in range(4):
     # delay 3 seconds
     time.sleep(3)
 
+board.digital[PIN].write(0)
 time.sleep(7)
 PIN = 9
 last = 0
