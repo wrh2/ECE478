@@ -66,6 +66,14 @@ time.sleep(2)
 value = not value
 board.digital[PIN].write(value)
 
+# bring her back to normal state now
+value = 1
+PIN = 7
+board.digital[PIN].write(value)
+time.sleep(2)
+value = not value
+board.digital[PIN].write(value)
+
 # let go of serial comm and exit program
 board.exit()
 sys.exit()
