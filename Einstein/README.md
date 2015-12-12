@@ -27,3 +27,11 @@ This is a action (integer from 1-10) that einstein "reacts" to. Returns a string
 > python main.py -c "integer from 1-15"
 
 This issues a command to the robot
+
+## Einstein team
+
+[William Harrington](mailto:wrh2@pdx.edu)
+
+[David Hernandez](mailto:dhern2@pdx.edu)
+
+[Waleed Alhaddad](mailto:alhad@pdx.edu)
