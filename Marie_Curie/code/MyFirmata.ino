@@ -783,39 +783,113 @@ void loop()
     }
   }
 
-  bool doStuff = digitalRead(8);
-  bool doStuff2 = digitalRead(9);
-  
-  if(doStuff){
+  bool addressCrowd = digitalRead(6);
+  bool happy = digitalRead(9);
+  bool surprised = digitalRead(8);
+  bool confused = digitalRead(10);
+  bool normal = digitalRead(7);  
+  if(addressCrowd){
     maestro.setTarget(0, 4000); 
-    delay(100);
+    delay(500);
     maestro.setTarget(1, 4000);
-    delay(100);
-    maestro.setTarget(13, 4000);
-    delay(100);
-    maestro.setTarget(13, 8000); 
-    delay(100);
+    delay(500);
+    for(int j=0;j<4;j++){
+
+      maestro.setTarget(13, 4000);
+      delay(200);
+      maestro.setTarget(13, 8000); 
+      delay(200);
+    }
+    
     maestro.setTarget(1, 8000); 
-    delay(100);
-    maestro.setTarget(13, 4000);
-    delay(100);
-    maestro.setTarget(13, 8000);
-    delay(100);
+    delay(500);
+    for(int j=0;j<4;j++){
+
+      maestro.setTarget(13, 4000);
+      delay(200);
+      maestro.setTarget(13, 8000); 
+      delay(200);
+    }
+    
   }
-  if(doStuff2){
+  if(happy){
     maestro.setTarget(0, 5000);
     delay(100);
     maestro.setTarget(1, 6000);
     delay(100);
-    maestro.setTarget(6, 4000);//up 
+    maestro.setTarget(6, 4000); 
     maestro.setTarget(7, 8000);
     maestro.setTarget(11, 4000); 
     delay(100);
-    maestro.setTarget(6, 8000);//down 
-    maestro.setTarget(7, 4000);//up 
+    maestro.setTarget(6, 8000); 
+    maestro.setTarget(7, 4000); 
     delay(100);
     maestro.setTarget(11, 8000); 
-    maestro.setTarget(13, 4000);//up 
+    maestro.setTarget(13, 4000); 
     delay(100);
   }
+
+  if(surprised){
+     //Surprised face
+    maestro.setTarget(8, 6000);//left eyebrow normal 
+    maestro.setTarget(9, 6000);//right eyebrow normal
+    maestro.setTarget(13, 8000);//closed mouth 
+    delay(500);
+  
+    maestro.setTarget(8, 8000);//left eyebrow up 
+    maestro.setTarget(9, 4000);//right eyebrow up
+    maestro.setTarget(13, 4000);//closed mouth 
+    delay(1500);
+  }
+
+  if(confused){
+    maestro.setTarget(8, 8000);//left eyebrow up
+    maestro.setTarget(9, 8000);
+    delay(100);  
+    for(int i=0;i<5;i++){
+
+       maestro.setTarget(0, 4000); 
+       delay(100);
+       maestro.setTarget(1, 4000); 
+       delay(100);
+       maestro.setTarget(13, 4000); 
+       delay(100);
+       maestro.setTarget(0, 8000); 
+       delay(100);
+       maestro.setTarget(1, 8000); 
+       delay(100);
+       maestro.setTarget(8, 4000);
+       delay(500);
+    }
+    
+  }
+
+  if(normal){
+    maestro.setTarget(0, 6000); 
+    delay(100);
+    maestro.setTarget(1, 6000); 
+    delay(100);
+    maestro.setTarget(6, 6000); 
+    delay(100);
+    maestro.setTarget(7, 6000); 
+    delay(100);
+    maestro.setTarget(8, 4000); 
+    delay(100);
+    maestro.setTarget(9, 8000); 
+    delay(100);
+    maestro.setTarget(10, 6000); 
+    delay(100);
+    maestro.setTarget(11, 6000); 
+    delay(100);
+    maestro.setTarget(12, 6000); 
+    delay(100);
+    maestro.setTarget(13, 8000); 
+    delay(100);
+    maestro.setTarget(14, 6000); 
+    delay(100);
+    maestro.setTarget(15, 6000); 
+    delay(100);
+  }
+
+  
 }
