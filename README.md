@@ -1,17 +1,11 @@
 # ECE478
 
-Repo that contains code for Einstein robot project for ECE478 Fall 2015
+Repo that contains code and documetnation produced by William Harrington for the ECE478 Fall 2015 class.
 
 ## Table of contents
 
-Einstein - core einstein code, contains some fuzzy/probablistic logic for behavior of robot
+Einstein - core einstein code, contains some fuzzy/probablistic logic for behavior of robot, HW1 documentation
 
-SimpleCV_stuff - computer vision code for robot
+Marie_Curie - code and documentation for Marie Curie final project
 
-## Einstein team
-
-[William Harrington](mailto:wrh2@pdx.edu)
-
-[David Hernandez](mailto:dhern2@pdx.edu)
-
-[Waleed Alhaddad](mailto:alhad@pdx.edu)
+SimpleCV_stuff - computer vision code for possible future integration of other robots.
